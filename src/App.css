@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+.list-group-item{
+  border-left: none;
+  border-right: none;
+}
+.list-group .row,.list-group-item .row{
+  margin-left: 0;
+  margin-right:0;
+}
+.list-group,.dropdownMenuButton{
+  cursor: pointer;
+}
+.App{
+  max-width: 500px;
+}
+.errorDiv{
+  background-color: rgba(0,0,0,.02);
+  border-top: 1px solid rgba(0,0,0,.125);
+}
+.errorImg{
+  margin-top: 70px;
+  width: 70%;
+  padding: 10px;
+}
+.retry-button{
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center; 
+  margin-top: 50px;
+  width: 91%;
+  height: 48px;
+  padding: 16px;
+  border: 2px solid #31B057;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #31B057;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.error-message-heading{
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #4A4A4A;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.error-message-text{
+  font-size: 15px;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #929292;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+*{
+  overflow-x: hidden;
 }
